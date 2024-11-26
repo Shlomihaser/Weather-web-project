@@ -2,7 +2,7 @@ import { fetchWeatherByCity } from "../utils/fetchweather.utils.js";
 
 export const getWeatherByCity = async (req,res) => {
     const {city} = req.body;
-
+    
     try {
         if(!city)
             throw new Error("City field is missing");
