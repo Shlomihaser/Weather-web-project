@@ -1,5 +1,5 @@
-import React from 'react'
-import '../styles/App.css'
+import React from 'react';
+import '../styles/WeatherDataStyle.css';
 
 export default function WeatherDataComp() {
   return (

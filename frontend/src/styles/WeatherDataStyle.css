@@ -1,0 +1,5 @@
+.weather-data-container {
+    background-color: #DDE4E6;
+    flex-grow: 1;
+    border-radius: 10px;
+}
