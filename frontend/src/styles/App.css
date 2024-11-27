@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Heebo:wght@100..900&display=swap');
+
+:root {
+    --teal-color:#27737D;
+    --green-color:#046B3B;
+    --light-color:#DDE4E6;
+    --grey-color:#F1F1F1;
+    --text-grey-color:#707070;
+    --light-white-color:#A8C6CB;
+}
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Heebo;
+}
+
+body {
+    background-color: var(--grey-color);
+    min-height: 100vh;
+}
+
+.fintek-logo {width: 80px;}
+
+.app-container {
+    padding:20px 50px;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.weather-data-container {
+    background-color: var(--light-white-color);
+    border-radius: 5px;
+    margin-left:100px;
+    flex-grow: 1;
+}
+
+
+
+
+
