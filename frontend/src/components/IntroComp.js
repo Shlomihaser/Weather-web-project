@@ -21,7 +21,7 @@ export default function IntroComp() {
         </div>
 
         <div className='other-details'>
-          <p>latitude 32.78 longtitude 89</p>
+          <p>latitude 32.78&emsp;&ensp;longtitude 89.76</p>
           <p>accurate at 13/02/2022 at 16:24</p>
         </div>
         

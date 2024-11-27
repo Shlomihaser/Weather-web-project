@@ -1,5 +1,97 @@
-.weather-data-container {
+.weather-data-background {
     background-color: #DDE4E6;
     flex-grow: 1;
-    border-radius: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-data-container {
+    background-color: #27737D;
+    border-radius: 30px;
+    padding-top: 70px;
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+.location-date-wrapper{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-date-wrapper .country , .location-date-wrapper .date-time{
+    font-weight: 100;
+    font-size: 1.2rem;
+    opacity: .8;
+    display: inline-block;
+    line-height: 2.3;
+}
+
+.location-date-wrapper .country{
+    line-height: 1;
+}
+
+.location-date-wrapper .city{
+    font-size: 1.8rem;
+    font-weight: 300;
+    display: inline-block;
+    line-height: 1;
+}
+
+.degree-status {
+    text-align: center;
+    color: white;
+    line-height: 1;
+    margin-top: 30px;
+}
+
+.degree-status .degree{
+    font-size: 10rem;
+    font-weight: 600;
+}
+
+.degree-status .status{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+
+.weather-details {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.weather-details-container {
+    margin:20px;
+    text-align: center;
+    color:white;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+.weather-details-container .title-detail{
+    font-weight: 150;
+}
+
+
+.hourly-forecast {
+    display: flex;
+    justify-content: center;
+}
+
+.hour-degree-container {
+    margin:20px;
+    text-align: center;
+    font-size: 1.2rem;
+    color:white;
+}
+
+.hour-degree-container .hour{
+    font-weight: 100;
+    opacity: .8;
 }

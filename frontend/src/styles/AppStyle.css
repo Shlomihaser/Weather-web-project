@@ -19,12 +19,12 @@
 html,body,#root {
     background-color: var(--grey-color);
     height: 100%;
+    padding: 10px;
 }
 
 #root {
     display: flex;
     flex-direction: column;
-    padding: 45px;
 }
 
 .app-container {
