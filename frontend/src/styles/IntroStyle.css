@@ -18,14 +18,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
+
 
 .intro__title {
     font-size: 2rem;
     font-weight: 200;
     color: var(--text-grey-color);
     margin-bottom: 50px;
-    margin-top: 30px;
+    margin-top: 50px;
+    
 }
 
 .intro__details {
@@ -35,7 +38,6 @@
 
 @media (max-width: 1250px) {
     .intro__content {
-        margin-left: 0;
         margin-right: 0;
     }
 
@@ -45,6 +47,7 @@
 
     .intro__title {
         font-size: 1.7rem;
+
     }
 }
 
@@ -61,6 +64,7 @@
     .intro__title {
         font-size: 1.3rem;
         margin-top: 20px;
+
     }
 
     .intro__details {

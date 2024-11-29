@@ -1,6 +1,6 @@
 .weather-data-background {
     background-color: #DDE4E6;
-    flex-grow: 1.5;
+    flex-grow: 1;
     border-radius: 5px;
     display: grid;
     place-items: center;
@@ -10,16 +10,13 @@
     background-color: #27737D;
     border-radius: 30px;
     padding: 3rem 2rem;
-    max-width: 700px;
-    min-height: 150px;
+    min-width: 50%;
+    min-height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-
 }
 
-.blank {justify-content: center;}
 
 .location-date-wrapper {
     color: white;
@@ -68,6 +65,7 @@
 .placeholder-text {
     color: white;
     text-align: center;
+    padding: 0 .5rem;
 }
 
 .placeholder-text h2 {
@@ -81,7 +79,10 @@
     opacity: 0.8;
 }
 
-
+.cloud-icon {
+    height: 100px;
+    padding: 2rem;
+}
 
 @media (max-width: 1000px) {
     .weather-data-container {

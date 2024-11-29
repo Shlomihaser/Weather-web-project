@@ -3,6 +3,9 @@ import '../styles/WeatherDataStyle.css';
 import WeatherDetailComp from './WeatherDetailComp';
 import { WeatherContext } from '../App';
 import { formatDate } from '../utils/weather.utils';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCloud } from '@fortawesome/free-solid-svg-icons/faCloud';
+
 
 export default function WeatherDataComp() {
   const { weatherData } = useContext(WeatherContext);
@@ -22,6 +25,7 @@ export default function WeatherDataComp() {
 
   return (
     <div className='weather-data-background'>
+      
       {weatherData ? (
         <div className='weather-data-container'>
           <div className='location-date-wrapper'>
@@ -52,13 +56,16 @@ export default function WeatherDataComp() {
           </div>
         </div>
       ) : (
-        <div className='weather-data-container blank'>
+        <div className='weather-data-container'>
           <div className="placeholder-text">
+            <FontAwesomeIcon icon={faCloud} className='cloud-icon'/>
             <h2>No weather data available</h2>
             <p>Enter a location to see the weather forecast</p>
           </div>
         </div>
       )}
+      
     </div>
+    
   );
 }
