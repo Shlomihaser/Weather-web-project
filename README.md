@@ -95,6 +95,4 @@ Enter a city name in the search bar to view current weather conditions and hourl
 
 ## Screenshots
 
-![Big Screenshot](screenshots/screenshot-big-screen.png)
-![Small Screenshot](screenshots/screenshot-mobile.png)
-![Small Screenshot](screenshots/screenshots (2).jpg)
+![SmallScreenshot](screenshots/screenshots (2).jpg)
