@@ -1,5 +1,5 @@
-import React from 'react'
-import '../styles/WeatherDataStyle.css';
+import React from 'react';
+import '../styles/WeatherDetailStyle.css';
 
 export default function WeatherDetail({title,value}) {
   return (

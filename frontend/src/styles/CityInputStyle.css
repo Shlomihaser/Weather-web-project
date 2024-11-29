@@ -1,0 +1,72 @@
+.city-input__label {
+    color: #707070;
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-weight: 250;
+    font-size: 1rem;
+}
+
+.city-input {
+    width: 350px; 
+}
+
+.city-input__wrapper {
+    position: relative;
+    width: 100%; 
+}
+
+.city-input__field {
+    width: 100%; 
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.city-input__button {
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    font-weight: 200;
+    background-color: #046B3B;
+    color: white;
+    border: none;
+    padding: 5px 10px; 
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.city-input__error {
+    color: rgb(239, 112, 112);
+    margin-left: 1.1rem;
+    margin-top: .2rem;
+}
+
+@media (max-width: 1250px) {
+    .city-input {
+        width: 280px; 
+    }
+}
+
+@media (max-width: 850px) {
+    .city-input__label {
+        font-size: .8rem;
+    }
+
+    .city-input__field {
+        width: 100%; 
+        border: none;
+        border-radius: 10px;
+        padding: 7px;
+        outline: none;
+        font-size: 1.1rem;
+    }
+
+    .city-input__button {
+        font-size: .9rem;
+    }
+}

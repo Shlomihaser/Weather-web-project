@@ -1,32 +1,40 @@
-import React from 'react'
-import '../styles/AppStyle.css';
+import React, { useContext, useEffect } from 'react'
 import '../styles/IntroStyle.css'
 import fintekLogo from '../assets/fintek-logo.png';
-import InputCityComp from '../components/InputCityComp';
+import CityInputComp from '../components/CityInputComp';
+import { WeatherContext } from '../App';
+import { formatDate } from '../utils/weather.utils';
+import WeatherDataComp from './WeatherDataComp';
 
 export default function IntroComp() {
+  const { weatherData } = useContext(WeatherContext);
+
   return (
-    <div className='intro-container'>
-      <img className='fintek-logo' alt="fintek-logo" src={fintekLogo}/>
+    <div className='intro'>
+
+      <img className='intro__logo' alt="Fintek logo" src={fintekLogo}/>
       
-      <div className='intro-flex-wrapper'>
+      <div className='intro__content'>
 
-        <div className='title-input-wrapper'>
-          <p className='title'>
-            Use our weather app <br/>
-            to see the weather <br/>
+        <div className='intro__header'>
+          <h1 className='intro__title'>
+            Use our weather app<br/>
+            to see the weather<br/>
             around the world
-          </p>
-          <InputCityComp/>
-        </div>
+          </h1>
+          <CityInputComp/>
 
-        <div className='other-details'>
-          <p>latitude 32.78&emsp;&ensp;longtitude 89.76</p>
-          <p>accurate at 13/02/2022 at 16:24</p>
         </div>
         
+        {weatherData && (
+          <div className='intro__details'>
+            <p>Latitude: {String(weatherData.location.lat).substring(0,5)} &emsp;Longitude: {String(weatherData.location.lon).substring(0,5)}</p>
+            <p>Accurate to: {formatDate(weatherData.location.localtime)}</p>
+          </div>
+        )}
+        
       </div>
-     
+
     </div>
   )
 }

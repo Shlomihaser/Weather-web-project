@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import weatherRoute from "../routers/weather.router.js"
+import weatherRoute from "../routes/weather.router.js"
 
 dotenv.config();
 const app = express();
