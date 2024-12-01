@@ -18,7 +18,7 @@
 
 @media (max-width: 1200px) {
     .location-date-wrapper .city {
-        font-size: 1.5rem; /* Adjusted font size */
+        font-size: 1.5rem; 
     }
 
     .location-date-wrapper .country,
