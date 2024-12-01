@@ -35,7 +35,7 @@ A simple and responsive weather application that allows users to check the curre
     create .env file inside the project folder and past these variables and fill the blank:
     PORT=5000
     WEATHER_API_KEY= 'API KEY'
-    WATHER_API_URL=http://api.weatherapi.com/v1/forecast.json 
+    WEATHER_API_URL=http://api.weatherapi.com/v1/forecast.json 
 
 #### Usage
 After starting both the frontend and backend servers, open your browser and navigate to http://localhost:3000 to access the application.
